@@ -360,6 +360,50 @@ button {
   }
 }
 
+/* =============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================= */
+
+/* Base state — hidden before entering viewport */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Variants: different starting transforms */
+.reveal-fade-up    { transform: translateY(40px); }
+.reveal-fade-down  { transform: translateY(-30px); }
+.reveal-fade-left  { transform: translateX(40px); }
+.reveal-fade-right { transform: translateX(-40px); }
+.reveal-zoom       { transform: scale(0.93); }
+.reveal-fade       { transform: none; }
+
+/* Triggered state — fully visible */
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger delays for child elements */
+.reveal-stagger > .reveal { --stagger-base: 0ms; }
+.reveal-stagger > .reveal:nth-child(1)  { transition-delay: calc(var(--stagger-base, 0ms) + 0ms); }
+.reveal-stagger > .reveal:nth-child(2)  { transition-delay: calc(var(--stagger-base, 0ms) + 80ms); }
+.reveal-stagger > .reveal:nth-child(3)  { transition-delay: calc(var(--stagger-base, 0ms) + 160ms); }
+.reveal-stagger > .reveal:nth-child(4)  { transition-delay: calc(var(--stagger-base, 0ms) + 240ms); }
+.reveal-stagger > .reveal:nth-child(5)  { transition-delay: calc(var(--stagger-base, 0ms) + 320ms); }
+.reveal-stagger > .reveal:nth-child(6)  { transition-delay: calc(var(--stagger-base, 0ms) + 400ms); }
+.reveal-stagger > .reveal:nth-child(7)  { transition-delay: calc(var(--stagger-base, 0ms) + 480ms); }
+.reveal-stagger > .reveal:nth-child(8)  { transition-delay: calc(var(--stagger-base, 0ms) + 560ms); }
+
+/* Manual delay helpers */
+.reveal-delay-1 { transition-delay: 80ms !important; }
+.reveal-delay-2 { transition-delay: 160ms !important; }
+.reveal-delay-3 { transition-delay: 240ms !important; }
+.reveal-delay-4 { transition-delay: 320ms !important; }
+.reveal-delay-5 { transition-delay: 400ms !important; }
+
 /* Reduced Motion Override */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -367,5 +411,11 @@ button {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  /* Immediately show all reveal elements */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }

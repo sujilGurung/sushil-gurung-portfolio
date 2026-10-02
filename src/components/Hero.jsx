@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight, Download, Mail, Sparkles, Terminal } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { personalInfo } from '../data/portfolioData';
 import HeroCoreCanvas from './HeroCoreCanvas';
 
 export default function Hero({ onOpenCV }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => setMounted(true), 100);
+    return () => clearTimeout(t);
+  }, []);
+
   const scrollToProjects = (e) => {
     e.preventDefault();
     const projectsEl = document.getElementById('projects');
     if (projectsEl) {
       projectsEl.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const fadeUp = (delay = 0) => ({
+    opacity: mounted ? 1 : 0,
+    transform: mounted ? 'translateY(0)' : 'translateY(30px)',
+    transition: `opacity 0.75s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 0.75s cubic-bezier(0.16,1,0.3,1) ${delay}ms`,
+  });
+
+  const fadeLeft = {
+    opacity: mounted ? 1 : 0,
+    transform: mounted ? 'translateX(0)' : 'translateX(40px)',
+    transition: 'opacity 0.9s cubic-bezier(0.16,1,0.3,1) 300ms, transform 0.9s cubic-bezier(0.16,1,0.3,1) 300ms',
   };
 
   return (
@@ -44,7 +63,8 @@ export default function Hero({ onOpenCV }) {
                 marginBottom: '1.25rem',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.6rem'
+                gap: '0.6rem',
+                ...fadeUp(0)
               }}
             >
               <span className="dot" />
@@ -61,7 +81,8 @@ export default function Hero({ onOpenCV }) {
                 letterSpacing: '-0.03em',
                 background: 'linear-gradient(135deg, #ffffff 40%, #a5f3fc 80%, #38bdf8 100%)',
                 WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent'
+                WebkitTextFillColor: 'transparent',
+                ...fadeUp(100)
               }}
             >
               {personalInfo.tagline}
@@ -74,7 +95,8 @@ export default function Hero({ onOpenCV }) {
                 color: '#94a3b8',
                 lineHeight: 1.7,
                 marginBottom: '2.5rem',
-                maxWidth: '560px'
+                maxWidth: '560px',
+                ...fadeUp(200)
               }}
             >
               {personalInfo.bio}
@@ -87,7 +109,8 @@ export default function Hero({ onOpenCV }) {
                 flexWrap: 'wrap',
                 alignItems: 'center',
                 gap: '1rem',
-                marginBottom: '2.5rem'
+                marginBottom: '2.5rem',
+                ...fadeUp(300)
               }}
             >
               <a
@@ -117,7 +140,8 @@ export default function Hero({ onOpenCV }) {
                 alignItems: 'center',
                 gap: '1.5rem',
                 paddingTop: '1.5rem',
-                borderTop: '1px solid rgba(255, 255, 255, 0.08)'
+                borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                ...fadeUp(420)
               }}
             >
               <span
@@ -198,7 +222,8 @@ export default function Hero({ onOpenCV }) {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              width: '100%'
+              width: '100%',
+              ...fadeLeft
             }}
           >
             <HeroCoreCanvas />

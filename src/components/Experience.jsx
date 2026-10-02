@@ -1,13 +1,19 @@
 import React from 'react';
 import { Briefcase, Calendar, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function Experience() {
+  const [headerRef, headerVisible] = useScrollReveal();
+  const [bodyRef, bodyVisible] = useScrollReveal({ threshold: 0.06 });
   return (
     <section id="experience" className="section">
       <div className="container">
         {/* Section Header */}
-        <div className="section-header">
+        <div
+          ref={headerRef}
+          className={`section-header reveal reveal-fade-up${headerVisible ? ' reveal-visible' : ''}`}
+        >
           <div className="section-tag">
             <span className="dot" />
             <span>Career Pathway</span>
@@ -19,7 +25,11 @@ export default function Experience() {
         </div>
 
         {/* Futuristic Glowing Timeline Container */}
-        <div style={{ maxWidth: '820px', margin: '0 auto', position: 'relative' }}>
+        <div
+          ref={bodyRef}
+          className={`reveal reveal-fade-up${bodyVisible ? ' reveal-visible' : ''}`}
+          style={{ maxWidth: '820px', margin: '0 auto', position: 'relative' }}
+        >
           {/* Vertical Glowing Line */}
           <div
             style={{

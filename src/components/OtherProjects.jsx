@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import { BookMarked, Wrench, Terminal, Check, ChevronRight, Layers } from 'lucide-react';
 import { otherProjects } from '../data/portfolioData';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function OtherProjects() {
+  const [subHeaderRef, subHeaderVisible] = useScrollReveal();
+  const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.06 });
   const [selectedPythonApp, setSelectedPythonApp] = useState(0);
 
   return (
     <section className="section" style={{ paddingTop: '1rem' }}>
       <div className="container">
         {/* Sub Header */}
-        <div style={{ marginBottom: '2.5rem' }}>
+        <div
+          ref={subHeaderRef}
+          className={`reveal reveal-fade-up${subHeaderVisible ? ' reveal-visible' : ''}`}
+          style={{ marginBottom: '2.5rem' }}
+        >
           <div className="section-tag" style={{ marginBottom: '0.75rem' }}>
             <span className="dot" />
             <span>Additional Software Architecture</span>

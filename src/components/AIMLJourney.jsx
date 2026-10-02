@@ -2,13 +2,19 @@ import React from 'react';
 import { ExternalLink, BookOpen, CheckCircle, Clock, Sparkles, ArrowRight } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { learningJourney } from '../data/portfolioData';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function AIMLJourney() {
+  const [headerRef, headerVisible] = useScrollReveal();
+  const [bodyRef, bodyVisible] = useScrollReveal({ threshold: 0.06 });
   return (
     <section id="journey" className="section">
       <div className="container">
         {/* Section Header */}
-        <div className="section-header">
+        <div
+          ref={headerRef}
+          className={`section-header reveal reveal-fade-up${headerVisible ? ' reveal-visible' : ''}`}
+        >
           <div className="section-tag">
             <span className="dot" />
             <span>Continuous Specialization</span>

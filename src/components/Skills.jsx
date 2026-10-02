@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { Sparkles, Layers, Cpu, Layout, Server, Database, Wrench } from 'lucide-react';
 import { skillsData } from '../data/portfolioData';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function Skills() {
+  const [headerRef, headerVisible] = useScrollReveal();
+  const [tabsRef, tabsVisible] = useScrollReveal();
+  const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.06 });
+
   const categories = ['All', 'AI & Data', 'Frontend', 'Backend', 'Databases', 'Tools & Workflow'];
   const [selectedCategory, setSelectedCategory] = useState('All');
+
 
   const getCategoryIcon = (cat) => {
     switch (cat) {
@@ -25,7 +31,10 @@ export default function Skills() {
     <section id="skills" className="section">
       <div className="container">
         {/* Section Header */}
-        <div className="section-header">
+        <div
+          ref={headerRef}
+          className={`section-header reveal reveal-fade-up${headerVisible ? ' reveal-visible' : ''}`}
+        >
           <div className="section-tag">
             <span className="dot" />
             <span>Technical Capabilities</span>
@@ -38,6 +47,8 @@ export default function Skills() {
 
         {/* Category Tabs Filter */}
         <div
+          ref={tabsRef}
+          className={`reveal reveal-fade-up${tabsVisible ? ' reveal-visible' : ''}`}
           style={{
             display: 'flex',
             justifyContent: 'center',
@@ -80,6 +91,8 @@ export default function Skills() {
 
         {/* Skills Cards Grid */}
         <div
+          ref={gridRef}
+          className={`reveal-stagger reveal reveal-fade-up${gridVisible ? ' reveal-visible' : ''}`}
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',

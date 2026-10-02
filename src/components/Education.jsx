@@ -1,13 +1,19 @@
 import React from 'react';
 import { GraduationCap, Calendar, MapPin, CheckCircle2, Award, Landmark } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 export default function Education() {
+  const [headerRef, headerVisible] = useScrollReveal();
+  const [bodyRef, bodyVisible] = useScrollReveal({ threshold: 0.06 });
   return (
     <section id="education" className="section" style={{ paddingTop: '2rem' }}>
       <div className="container">
         {/* Section Header */}
-        <div className="section-header">
+        <div
+          ref={headerRef}
+          className={`section-header reveal reveal-fade-up${headerVisible ? ' reveal-visible' : ''}`}
+        >
           <div className="section-tag">
             <span className="dot" />
             <span>Academic Qualifications</span>
@@ -19,7 +25,11 @@ export default function Education() {
         </div>
 
         {/* Education Timeline */}
-        <div style={{ maxWidth: '820px', margin: '0 auto', position: 'relative' }}>
+        <div
+          ref={bodyRef}
+          className={`reveal reveal-fade-up${bodyVisible ? ' reveal-visible' : ''}`}
+          style={{ maxWidth: '820px', margin: '0 auto', position: 'relative' }}
+        >
           {/* Vertical Glowing Line */}
           <div
             style={{
