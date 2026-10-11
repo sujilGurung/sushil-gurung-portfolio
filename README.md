@@ -15,7 +15,7 @@ The portfolio presents my academic background, software development experience, 
 ### 🔗 Portfolio
 
 **Live Website:**
-`[ADD LIVE PORTFOLIO URL]`
+https://www.gurungsushil.com.np
 
 **GitHub:**
 https://github.com/sujilGurung
