@@ -1,435 +1,144 @@
-# Sushil Gurung | AI & Software Developer Portfolio
+# Sushil Gurung — Personal Portfolio
 
-![React](https://img.shields.io/badge/React-2026-61DAFB?logo=react\&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-2026-646CFF?logo=vite\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript\&logoColor=black)
-![AI](https://img.shields.io/badge/Focus-AI%20%2F%20ML-00BFFF)
-![Status](https://img.shields.io/badge/Status-Active-00C853)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![EmailJS](https://img.shields.io/badge/EmailJS-Integrated-FF6C37)](https://www.emailjs.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 🌐 Personal Portfolio
+Live Portfolio: **[https://gurungsushil.com.np/](https://gurungsushil.com.np/)**
 
-This repository contains the source code for my personal portfolio website.
-
-The portfolio presents my academic background, software development experience, Artificial Intelligence and Machine Learning projects, Final Year Project, internship experience, technical skills, and ongoing Data Science and Machine Learning journey.
-
-### 🔗 Portfolio
-
-**Live Website:**
-https://www.gurungsushil.com.np
-
-**GitHub:**
-https://github.com/sujilGurung
+Modern, fast, and responsive personal developer portfolio website designed for **Sushil Gurung** — Computing Graduate, Full-Stack Developer, and Aspiring AI & Machine Learning Professional.
 
 ---
 
-## 👨‍💻 About Me
+## 🌟 Key Highlights
 
-Hi, I'm **Sushil Gurung**, a Computing graduate from **Informatics College Pokhara**, affiliated with **London Metropolitan University, UK**.
-
-My interests include:
-
-* Artificial Intelligence
-* Machine Learning
-* Data Science
-* Software Development
-* Web Development
-* Intelligent Applications
-
-I enjoy turning ideas into practical software and continuously developing my skills through projects and hands-on learning.
+- **Aesthetic Dark Navy / Electric Blue Theme**: High-contrast, sleek palette (`#030712`, electric cyan `#00f0ff`, and blue `#0070f3`) with clean glassmorphic cards and subtle animations.
+- **Modern Typography**: Inter and Space Grotesk fonts for crisp readability.
+- **Real Headshot in Hero**: Integrated circular frame with cyan glow and status indicator from `/profile.jpeg`.
+- **CV Integration**: Both **View CV** (opens in new tab) and **Download CV** (downloads `/Sushil_Gurung_CV.pdf`) functional across Hero, Navbar, and Contact sections.
+- **Interactive EmailJS Contact Form**: Form validation, honeypot anti-spam protection, loading state, and direct message delivery to `sujilgurung15@gmail.com`.
+- **Single-Page Flow**: Smooth scrolling navigation across 6 sections: Home, About, Skills, Projects, Experience, and Contact.
 
 ---
 
-## 🚀 Featured Projects
-
-### 🧠 Cancer Prediction Machine
-
-**AI / Machine Learning Project**
-
-An academic AI/ML project focused on analysing medical data and developing a machine-learning-based approach for cancer-related prediction.
-
-The project demonstrates the application of AI/ML concepts to a healthcare-focused problem.
-
-> Project details such as dataset, algorithm, evaluation metrics and accuracy are documented separately and are only included where technically verified.
-
----
-
-### 🍽️ Mittho Bhojan
-
-**Final Year Project | Full-Stack Web Application**
-
-Mittho Bhojan is a restaurant pre-ordering and delivery platform developed as my Final Year Project.
-
-The system connects customers with restaurants and provides functionality for food ordering, restaurant management, payments, location-based discovery and AI-assisted interaction.
-
-#### Technologies
-
-* React
-* Vite
-* JavaScript
-* PHP
-* MySQL
-* REST APIs
-* Leaflet
-* Khalti
-* Gemini / RAG
-
-#### Key Features
-
-* Customer registration and authentication
-* Restaurant browsing
-* Food ordering
-* Shopping cart
-* Pre-ordering
-* Restaurant-owner panel
-* Admin functionality
-* Payment options
-* Location-based restaurant discovery
-* Delivery functionality
-* AI chatbot
-* RAG-based information retrieval
-
----
-
-### 🏔️ Trekking & Travel Web Application
-
-**Frontend Developer Internship | Everest Technologies**
-
-A frontend web application developed during my internship at Everest Technologies.
-
-My work focused on:
-
-* React development
-* Vite
-* UI implementation
-* Responsive layouts
-* API integration
-* Frontend functionality
-
----
-
-## 📱 Other Projects
-
-### Personal Journal App
-
-A personal journaling application developed using:
-
-* .NET MAUI
-* Blazor Hybrid
-* C#
-* SQLite
-
-Features include journal management, CRUD functionality, authentication, moods and tags.
-
-### Vehicle Service Management System
-
-A backend/API-focused application developed using:
-
-* ASP.NET Core
-* Entity Framework
-* PostgreSQL
-* Identity
-* Swagger
-
-### Python Learning Projects
-
-My Data Science and Machine Learning learning journey also includes smaller Python projects such as:
-
-* Number Checker
-* Menu Calculator
-* Shopping Receipt
-* To-Do List
-* Shopping Cart
-* Phonebook
-* Report Card
-* Student ID Card
-* Common Words Finder
-
----
-
-## 🎓 Education
-
-### BSc (Hons) Computing
-
-**Informatics College Pokhara**
-Affiliated with **London Metropolitan University, UK**
-
-**2023–2026**
-
-### +2 / Higher Secondary Education
-
-**United Academy**
-Kumaripati, Lalitpur, Nepal
-
----
-
-## 📚 Data Science & Machine Learning Journey
-
-I am documenting my Data Science and Machine Learning learning journey through a public GitHub repository.
-
-### Skills Shikshya
-
-The learning journey covers programming fundamentals and progressively develops toward Data Science and Machine Learning.
-
-Topics include:
-
-* Python
-* Git & GitHub
-* Programming fundamentals
-* Lists
-* Tuples
-* Sets
-* Dictionaries
-* Conditional logic
-* Data Science
-* Machine Learning
-
-### 100 Days of Learning
-
-Repository:
-
-https://github.com/sujilGurung/DS_ML_Course
-
-The repository contains daily notes, exercises, projects and code from my learning journey.
-
----
-
-## 🛠️ Technical Skills
-
-### Artificial Intelligence & Data
-
-* Python
-* Machine Learning
-* Data Science
-* Artificial Intelligence
-* RAG
-
-### Frontend
-
-* React
-* Vite
-* JavaScript
-* HTML
-* CSS
-
-### Backend
-
-* PHP
-* ASP.NET Core
-* REST APIs
-
-### Databases
-
-* MySQL
-* PostgreSQL
-* SQLite
-
-### Tools
-
-* Git
-* GitHub
-* Swagger
-* VS Code
-
----
-
-## 💼 Experience
-
-### Frontend Developer Intern
-
-**Everest Technologies**
-
-Worked on a trekking/travel web application using React and Vite, with responsibilities focused on frontend development, UI implementation, responsive design and API integration.
-
----
-
-## 🎨 Portfolio Design
-
-The portfolio uses a modern futuristic visual style featuring:
-
-* Dark black/navy background
-* Electric blue and cyan accents
-* Glassmorphism
-* Interactive neural-network background
-* Animated project cards
-* Smooth scrolling
-* Scroll-triggered animations
-* Responsive design
-* Interactive AI network visualization
-* Modern UI animations
-
-The design is intended to represent the connection between:
-
-**Code → Data → Machine Learning → Artificial Intelligence**
-
----
-
-## ⚙️ Built With
-
-* React
-* Vite
-* JavaScript
-* CSS
-* Framer Motion
-* Modern web APIs
-
-Additional libraries may be used for the interactive neural-network background and UI effects.
-
----
-
-## 🧑‍💻 Run Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/[YOUR_USERNAME]/Sushil-Gurung-Portfolio.git
-```
-
-Navigate into the project:
-
-```bash
-cd Sushil-Gurung-Portfolio
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open the local development URL shown by Vite.
-
----
-
-## 📦 Build for Production
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
-Sushil-Gurung-Portfolio/
-│
+portfolio/
 ├── public/
-│   └── images/
-│
+│   ├── Favicon.png            # Custom favicon
+│   ├── profile.jpeg           # Hero headshot photograph
+│   └── Sushil_Gurung_CV.pdf   # Verified Curriculum Vitae PDF
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Education.jsx
-│   │   ├── AIMLJourney.jsx
-│   │   ├── Skills.jsx
-│   │   ├── AINetwork.jsx
-│   │   ├── Achievements.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   │
+│   │   ├── About.jsx               # About Me narrative & highlights
+│   │   ├── Contact.jsx             # Functional EmailJS contact form & socials
+│   │   ├── CustomCursor.jsx        # Subtle desktop cursor enhancement
+│   │   ├── ExperienceEducation.jsx # Combined experience & education section
+│   │   ├── Footer.jsx              # Minimalist responsive footer
+│   │   ├── Hero.jsx                # Hero section with profile headshot & CTA
+│   │   ├── Icons.jsx               # Custom SVG brand icons
+│   │   ├── Navbar.jsx              # Floating glass navbar with responsive drawer
+│   │   ├── NetworkBackground.jsx   # Lightweight interactive neural web canvas
+│   │   ├── Projects.jsx            # 5 curated projects with tech badges & links
+│   │   └── Skills.jsx              # Categorized skills (6 domains)
 │   ├── data/
-│   │   ├── projects.js
-│   │   ├── skills.js
-│   │   └── education.js
-│   │
-│   ├── assets/
-│   │   ├── projects/
-│   │   └── profile/
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+│   │   └── portfolioData.js        # Centralized information & content
+│   ├── hooks/
+│   │   └── useScrollReveal.js      # IntersectionObserver scroll reveal hooks
+│   ├── styles/
+│   │   └── theme.css               # Design tokens, variables & typography
+│   ├── App.jsx                     # Root application component
+│   ├── index.css                   # Global styles
+│   └── main.jsx                    # Vite entrypoint
+├── .env.example                    # Template for EmailJS environment variables
+├── index.html                      # HTML entry with metadata & SEO tags
+├── package.json                    # Dependencies & scripts
+└── vite.config.js                  # Vite configuration
 ```
 
 ---
 
-## 🎯 Portfolio Goals
+## 🛠️ Tech Stack
 
-This portfolio is designed to present my progression from:
-
-**Computing Education**
-
-↓
-
-**Software Development**
-
-↓
-
-**Frontend Internship**
-
-↓
-
-**Final Year Project**
-
-↓
-
-**AI / ML Project**
-
-↓
-
-**Data Science & Machine Learning**
-
-↓
-
-**AI Career**
+- **Frontend:** React 19, Vite 8, Lucide React icons
+- **Form Delivery:** `@emailjs/browser`
+- **Styling:** CSS variables, Glassmorphism, Responsive CSS Grid & Flexbox
+- **Typography:** Space Grotesk, Inter, JetBrains Mono
 
 ---
 
-## 📌 Current Focus
+## 🚀 Getting Started
 
-Currently focusing on strengthening my knowledge and practical skills in:
+### Prerequisites
 
-**Data Science → Machine Learning → Artificial Intelligence**
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-while continuing to build practical software projects.
+### Installation
+
+1. Clone or navigate to the repository:
+   ```bash
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure Environment Variables (EmailJS):
+   ```bash
+   cp .env.example .env
+   ```
+   Add your keys in `.env`:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+
+4. Start development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Build for production:
+   ```bash
+   npm run build
+   ```
+
+6. Preview production build locally:
+   ```bash
+   npm run preview
+   ```
 
 ---
 
-## 📬 Contact
+## ✉️ EmailJS Setup Guide
 
-**Sushil Gurung**
+To enable live message forwarding to `sujilgurung15@gmail.com`:
 
-GitHub:
-https://github.com/sujilGurung
-
-LinkedIn:
-`[ADD LINKEDIN URL]`
-
-Email:
-`[ADD EMAIL]`
-
-Portfolio:
-`[ADD LIVE WEBSITE URL]`
-
----
-
-## 📄 License
-
-This portfolio is a personal project.
-
-The source code may be referenced for educational purposes, but personal content, images, branding and project materials should not be reused without permission.
+1. Sign up for a free account at [EmailJS](https://www.emailjs.com/).
+2. Under **Email Services**, add Gmail and connect `sujilgurung15@gmail.com`. Note the `Service ID`.
+3. Under **Email Templates**, create a template with the following variables:
+   - `{{from_name}}` — Sender's name
+   - `{{from_email}}` — Sender's email
+   - `{{subject}}` — Message subject
+   - `{{message}}` — Message body
+   - `{{to_email}}` — Target recipient (`sujilgurung15@gmail.com`)
+   - Configure the template **Reply-To** field as `{{from_email}}`. Note the `Template ID`.
+4. Under **Account → API Keys**, copy your `Public Key`.
+5. Enter these three values into `.env` (or in your hosting provider's dashboard for Vercel/Netlify).
 
 ---
 
-⭐ If you find the portfolio interesting, feel free to explore the projects and learning journey.
+## 👤 Contact & Profiles
+
+- **Name:** Sushil Gurung
+- **Location:** Pokhara, Nepal
+- **Email:** [sujilgurung15@gmail.com](mailto:sujilgurung15@gmail.com)
+- **GitHub:** [https://github.com/sujilGurung](https://github.com/sujilGurung)
+- **LinkedIn:** [https://www.linkedin.com/in/sujil-gurung-2a8a002b0/](https://www.linkedin.com/in/sujil-gurung-2a8a002b0/)
+- **Live Portfolio:** [https://gurungsushil.com.np/](https://gurungsushil.com.np/)

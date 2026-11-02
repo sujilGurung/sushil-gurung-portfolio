@@ -15,18 +15,16 @@ export function useScrollReveal({
   once = true,
 } = {}) {
   const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
-
-    // Respect prefers-reduced-motion — show immediately
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reducedMotion) {
-      setIsVisible(true);
-      return;
-    }
+    if (!el || isVisible) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -42,7 +40,7 @@ export function useScrollReveal({
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [threshold, rootMargin, once]);
+  }, [threshold, rootMargin, once, isVisible]);
 
   return [ref, isVisible];
 }

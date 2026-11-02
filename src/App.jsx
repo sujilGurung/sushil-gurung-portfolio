@@ -1,59 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NetworkBackground from './components/NetworkBackground';
 import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
 import About from './components/About';
-import FeaturedProjects from './components/FeaturedProjects';
-import OtherProjects from './components/OtherProjects';
 import Skills from './components/Skills';
-import AINetwork from './components/AINetwork';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import AIMLJourney from './components/AIMLJourney';
-import Achievements from './components/Achievements';
-import GitHub from './components/GitHub';
+import Projects from './components/Projects';
+import ExperienceEducation from './components/ExperienceEducation';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CVModal from './components/CVModal';
 
 export default function App() {
-  const [cvModalOpen, setCvModalOpen] = useState(false);
-
   return (
     <div style={{ position: 'relative', width: '100%', minHeight: '100vh', backgroundColor: '#030712' }}>
-      {/* Interactive AI Neural Network / Spider-Web Background */}
+      {/* Subtle animated background */}
       <NetworkBackground />
 
-      {/* Desktop Custom Cursor */}
+      {/* Desktop custom cursor */}
       <CustomCursor />
 
-      {/* Floating Glass Navigation */}
-      <Navbar onOpenCV={() => setCvModalOpen(true)} />
+      {/* Floating navigation */}
+      <Navbar />
 
-      {/* Main Content Sections */}
+      {/* Main Content */}
       <main id="main-content" style={{ position: 'relative', zIndex: 1 }}>
-        <Hero onOpenCV={() => setCvModalOpen(true)} />
-        <Stats />
+        <Hero />
         <About />
-        <FeaturedProjects />
-        <OtherProjects />
         <Skills />
-        <AINetwork />
-        <Experience />
-        <Education />
-        <AIMLJourney />
-        <Achievements />
-        <GitHub />
-        <Contact onOpenCV={() => setCvModalOpen(true)} />
+        <Projects />
+        <ExperienceEducation />
+        <Contact />
       </main>
 
-      {/* Futuristic Footer */}
       <Footer />
-
-      {/* Full Resume / CV Modal */}
-      <CVModal isOpen={cvModalOpen} onClose={() => setCvModalOpen(false)} />
     </div>
   );
 }
